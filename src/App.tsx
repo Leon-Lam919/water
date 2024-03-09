@@ -1,13 +1,32 @@
 // App.tsx
 import React from 'react';
+import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
+import About from './Components/About';
+import Home from './Components/Home';
+import Water from './Components/Water';
+import './App.css';
 
-const Menu: React.FC = () => {
+
+const App: React.FC = () => {
   return (
-    <body>
-      <div className="bar">
-    </div>
-    </body>
+    <Router>
+      <nav>
+        <ul className = 'nav-menu'>
+          <li><Link to="/Components/Home" >Home</Link></li>
+          <li><Link to ="/Components/About">About</Link></li>
+          <li><Link to = "/Components/Water">Water</Link></li>
+        </ul>
+      </nav>
+      <Routes>
+      <Route>
+          <Route path="/" element={<Home/>}/>
+          <Route path='/Components/Water' element={<Water/>}/>
+          <Route path='/Components/About' element={<About/>}/>
+          <Route path='/Components/Home' element={<Home/>}/>
+      </Route>
+      </Routes>
+    </Router>
   );
 }
 
-export default Menu;
+export default App;
