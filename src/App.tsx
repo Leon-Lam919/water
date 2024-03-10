@@ -12,7 +12,7 @@ const App: React.FC = () => {
     <Router>
       <nav>
         <ul className = 'nav-menu'>
-          <li><Link to="/Components/Home" >Home</Link></li>
+          <li className='active'><Link to="/Components/Home" >Home</Link></li>
           <li><Link to ="/Components/About">About</Link></li>
           <li><Link to = "/Components/Water">Water</Link></li>
         </ul>

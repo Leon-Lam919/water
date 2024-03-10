@@ -3,7 +3,7 @@ import './style.css';
 
 const About: React.FC =()=>{
     return(
-        <div className='About'>
+        <div className='all-parts'>
             <p>About page</p>
         </div>
     )

@@ -4,7 +4,7 @@ import './style.css';
 
 const Water: React.FC = () =>{
     return(
-    <div className='Water'>
+    <div className='all-parts'>
         <p>Water page</p>
     </div>
     )

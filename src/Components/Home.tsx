@@ -3,7 +3,7 @@ import './style.css';
 
 const Home: React.FC = ()=>{
     return(
-        <div>
+        <div className='all-parts'>
             <p className='Home'>Home page</p>
         </div>
     )
