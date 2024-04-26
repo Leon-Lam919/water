@@ -6,7 +6,7 @@ import Home from './Components/Home';
 import Water from './Components/Water';
 import './App.css';
 
-
+// files are imported from the Components folder
 const App: React.FC = () => {
   return (
     <Router>
